@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+<h1>DOI to UW</h1>
+
+<input id="doi" type="text" /><br />
+<button onclick="doiRedirect()">Submit</button>
+
+<script>
+function doiRedirect() {
+	var response = document.getElementById('doi').value;
+	var redirectURL = "https://doi-org.proxy.lib.uwaterloo.ca/" + response;
+	location.replace(redirectURL);
+}
+</script>
+
+</body>
+</html> 
